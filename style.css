@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&display=swap');
+
 * {
     box-sizing: border-box;
+    font-family: "Eczar", serif;
 }
 
 body {
@@ -61,6 +64,7 @@ body, html {
 .box1 {
     background-color: black;
     padding: 30px;
+    margin-top: 4em;
 }
 
 .box2 {
@@ -89,4 +93,61 @@ div a {
     background-color: black;
     color: white;
     padding: 10px 45%;
+}
+
+.aM {
+    display: flex;
+    margin-top: 4em;
+}
+
+.aboutMe {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-left: 7em;
+    margin-right: 10em;
+}
+
+.aboutMe p {
+    font-size: 40px;
+}
+
+.aboutMe a {
+    color: white;
+    text-decoration: none;
+    background-color: #1B4BC0;
+    padding: 40px;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 3.75em;
+    border: 3px solid black;
+}
+
+.picture img {
+    margin-left: 10em;
+}
+
+.resume {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4em;
+    margin-left: 10em;
+    margin-right: 10em;
+}
+
+.resume p {
+    font-size: 40px;
+}
+
+.resume a {
+    color: white;
+    text-decoration: none;
+    background-color: #7D3EA8;
+    padding: 40px;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 3.75em;
+    border: 3px solid black;
+    margin-left: 4em;
+    margin-right: 4em;
 }
