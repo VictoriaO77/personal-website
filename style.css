@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
 * {
     box-sizing: border-box;
-    font-family: "Eczar", serif;
+    font-family: "Roboto Mono", monospace;
 }
 
 body {
@@ -119,7 +119,7 @@ div a {
     padding: 40px;
     font-size: 40px;
     text-align: center;
-    margin-top: 3.75em;
+    margin-top: 2em;
     border: 3px solid black;
 }
 
@@ -150,4 +150,37 @@ div a {
     border: 3px solid black;
     margin-left: 4em;
     margin-right: 4em;
+}
+
+.personal {
+    display: flex;
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-left: 7em;
+    margin-right: 10em;
+}
+
+.portfolio p {
+    font-size: 40px;
+}
+
+.portfolio a {
+    color: white;
+    text-decoration: none;
+    background-color: #1B4BC0;
+    padding: 40px;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 3.75em;
+    border: 3px solid black;
+}
+
+.portfolio img {
+    margin-left: 10em;
 }
