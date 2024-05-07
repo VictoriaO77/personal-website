@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 * {
     box-sizing: border-box;
-    font-family: "Roboto Mono", monospace;
+    font-family: "Lato", sans-serif;
 }
 
 body {
@@ -16,7 +16,8 @@ nav {
     border: 3px solid black;
 }
 
-body, html {
+body,
+html {
     height: 100%;
 }
 
@@ -72,29 +73,6 @@ body, html {
     padding: 10px;
 }
 
-footer {
-    background-color: #7D3EA8;
-    padding: 20px
-}
-
-.flex-container {
-    display: flex;
-    flex-wrap: nowrap;
-}
-
-.flex-container > div {
-    width: 50%;
-    margin: 10px;
-    text-align: center;
-    line-height: 50px;
-}
-
-div a {
-    background-color: black;
-    color: white;
-    padding: 10px 45%;
-}
-
 .aM {
     display: flex;
     margin-top: 4em;
@@ -119,7 +97,7 @@ div a {
     padding: 40px;
     font-size: 40px;
     text-align: center;
-    margin-top: 2em;
+    margin-top: 3em;
     border: 3px solid black;
 }
 
@@ -160,7 +138,7 @@ div a {
 
 .portfolio {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
     margin-left: 7em;
     margin-right: 10em;
@@ -177,10 +155,39 @@ div a {
     padding: 40px;
     font-size: 40px;
     text-align: center;
-    margin-top: 3.75em;
+    margin-top: 3em;
     border: 3px solid black;
 }
 
-.portfolio img {
-    margin-left: 10em;
+.personal img {
+    margin-right: 10em;
+}
+
+a:hover {
+    background-color: #ffffff;
+    color: black;
+}
+
+footer {
+    background-color: #7D3EA8;
+    padding: 20px
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.flex-container>div {
+    width: 50%;
+    margin-top: 1em;
+    text-align: center;
+    line-height: 50px;
+}
+
+div a {
+    background-color: black;
+    color: white;
+    padding: 10px 45%;
+    text-decoration: none;
 }
