@@ -11,9 +11,31 @@ body {
 }
 
 nav {
+    overflow: hidden;
     background-color: #7D3EA8;
     padding: 15px;
     border: 3px solid black;
+    border-radius: 15px;
+}
+
+nav a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
 }
 
 body,
@@ -39,6 +61,8 @@ html {
     color: white;
     font-size: 60px;
     background-color: black;
+    border: 5px solid black;
+    border-radius: 15px;
 }
 
 .hero {
@@ -56,21 +80,38 @@ html {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 20px;
+    font-size: 40px;
     padding-left: 10px;
     padding-right: 10px;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
+    border: 5px solid black;
+    border-radius: 15px;
+}
+
+.hobbies,
+.achievements,
+.future {
+    font-size: 40px;
+    margin-left: 7em;
+    margin-right: 7em;
+    margin-top: 5em;
+    margin-bottom: 5em;
 }
 
 .box1 {
     background-color: black;
     padding: 30px;
     margin-top: 4em;
+    border: 3px solid black;
+    border-radius: 15px;
 }
 
 .box2 {
     background-color: white;
     padding: 10px;
+    border: 3px solid black;
+    border-radius: 15px;
+    border-style: dashed;
 }
 
 .aM {
@@ -99,6 +140,8 @@ html {
     text-align: center;
     margin-top: 3em;
     border: 3px solid black;
+    border-radius: 15px;
+    border-style: dashed;
 }
 
 .picture img {
@@ -128,6 +171,8 @@ html {
     border: 3px solid black;
     margin-left: 4em;
     margin-right: 4em;
+    border-radius: 15px;
+    border-style: dashed;
 }
 
 .personal {
@@ -157,20 +202,20 @@ html {
     text-align: center;
     margin-top: 3em;
     border: 3px solid black;
+    border-radius: 15px;
+    border-style: dashed;
 }
 
 .personal img {
     margin-right: 10em;
 }
 
-a:hover {
-    background-color: #ffffff;
-    color: black;
-}
 
 footer {
     background-color: #7D3EA8;
-    padding: 20px
+    padding: 20px;
+    border: 3px solid black;
+    border-radius: 15px;
 }
 
 .flex-container {
@@ -190,4 +235,5 @@ div a {
     color: white;
     padding: 10px 45%;
     text-decoration: none;
+    border-radius: 15px;
 }
