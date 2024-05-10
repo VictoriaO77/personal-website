@@ -18,7 +18,7 @@ body {
     border-radius: 15px;
     animation-name: color;
     animation-duration: 4s;
-    box-shadow: 0px 8px 16px 0px rgb(217, 0, 255);
+    box-shadow: 0px 8px 16px 0px rgb(140, 0, 255);
 }
 
 .navbar a {
@@ -36,11 +36,11 @@ body {
     }
 
     25% {
-        background-color: #1B4BC0;
+        background-color: #c02dff;
     }
 
     50% {
-        background-color: #1B4BC0;
+        background-color: #2e2eff;
     }
 
     75% {
@@ -57,7 +57,7 @@ body {
     font-size: 50px;
     border: none;
     outline: none;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 14px 16px;
     font-family: inherit;
     margin: 0;
@@ -71,11 +71,11 @@ body {
     }
 
     25% {
-        background-color: #1B4BC0;
+        background-color: #c02dff;
     }
 
     50% {
-        background-color: #1B4BC0;
+        background-color: #2e2eff;
     }
 
     75% {
@@ -102,7 +102,7 @@ body {
     position: absolute;
     background-color: #323232;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgb(217, 0, 255);
+    box-shadow: 0px 8px 16px 0px rgb(140, 0, 255);
     z-index: 1;
 }
 
@@ -135,7 +135,7 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    box-shadow: 0px 8px 16px 0px rgb(217, 0, 255);
+    box-shadow: 0px 8px 16px 0px rgb(140, 0, 255);
 }
 
 .hero-text {
@@ -151,8 +151,7 @@ html {
     border-radius: 15px;
     animation: text 2s;
     animation-fill-mode: forwards;
-    box-shadow: 0px 8px 16px 0px rgb(217, 0, 255);
-    ;
+    box-shadow: 0px 3px 16px 10px rgb(140, 0, 255);
 }
 
 #herotext {
@@ -215,7 +214,7 @@ html {
     padding: 30px;
     border: 3px solid black;
     border-radius: 15px;
-    box-shadow: 0px 8px 16px 0px rgb(217, 0, 255);
+    box-shadow: 0px 3px 16px 10px rgb(140, 0, 255);
 }
 
 .box2 {
@@ -231,6 +230,7 @@ html {
     margin-top: 4em;
     border: 3px solid black;
     border-radius: 15px;
+    box-shadow: 0px 3px 16px 10px rgb(140, 0, 255);
 }
 
 .box4 {
@@ -270,7 +270,7 @@ html {
 }
 
 a:hover {
-    box-shadow: 0px 8px 16px 0px rgb(217, 0, 255);
+    box-shadow: 0px 3px 16px 10px rgb(162, 73, 182);
 }
 
 .picture img {
@@ -337,10 +337,106 @@ a:hover {
     margin-right: 10em;
 }
 
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
-    width: 70%;
+body .slideshow-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #1B4BC0, black);
+}
+
+.slideshow-container {
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 3px 5px 10px rgba(0,0,0,0.3);
     margin: auto;
+}
+
+.slides {
+    display: flex;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+.slides::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.slides::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 10px;
+}
+
+.slides::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.slides > div {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    background: #000000;
+    transform-origin: center center;
+    transform: scale(1);
+    transition: transform 0.5s;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+}
+
+.slideshow-container img {
+    object-fit: scale-down;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+}
+
+.slideshow-nav {
+    position: absolute;
+    z-index: 2;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.slideshow-nav > a {
+    display: inline-flex;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: white;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20%;
+    margin: 0 0.25rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.slideshow-nav > a:hover {
+    background-color: #7D3EA8;
+}
+
+.slideshow-nav > a:focus {
+    background: #000;
+}
+
+@supports (scroll-snap-type) {
+    .slideshow-nav {
+        display: none;
+    }
+    .slides {
+        overflow-x: scroll;
+    }
 }
 
 footer {
