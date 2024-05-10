@@ -430,15 +430,6 @@ body .slideshow-container {
     background: #000;
 }
 
-@supports (scroll-snap-type) {
-    .slideshow-nav {
-        display: none;
-    }
-    .slides {
-        overflow-x: scroll;
-    }
-}
-
 footer {
     background-color: #7D3EA8;
     padding: 20px;
