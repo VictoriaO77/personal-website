@@ -14,11 +14,11 @@ body {
     overflow: hidden;
     background-color: #7D3EA8;
     padding: 20px;
-    border: 3px solid black;
+    border: 10px solid black;
     border-radius: 15px;
     animation-name: color;
     animation-duration: 4s;
-    box-shadow: 0px 8px 16px 0px rgb(140, 0, 255);
+    border-style: double;
 }
 
 .navbar a {
@@ -40,7 +40,7 @@ body {
     }
 
     50% {
-        background-color: #2e2eff;
+        background-color: #69168d;
     }
 
     75% {
@@ -75,7 +75,7 @@ body {
     }
 
     50% {
-        background-color: #2e2eff;
+        background-color: #69168d;
     }
 
     75% {
@@ -135,7 +135,6 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    box-shadow: 0px 8px 16px 0px rgb(140, 0, 255);
 }
 
 .hero-text {
@@ -150,8 +149,7 @@ html {
     border: 5px solid black;
     border-radius: 15px;
     animation: text 2s;
-    animation-fill-mode: forwards;
-    box-shadow: 0px 3px 16px 10px rgb(140, 0, 255);
+    animation-fill-mode: forwards;;
 }
 
 #herotext {
@@ -187,7 +185,7 @@ html {
     border-radius: 15px;
 }
 
-.h1 {
+.box-h1 {
     font-size: 30px;
     margin-top: 3em;
     margin-left: 6em;
@@ -214,7 +212,6 @@ html {
     padding: 30px;
     border: 3px solid black;
     border-radius: 15px;
-    box-shadow: 0px 3px 16px 10px rgb(140, 0, 255);
 }
 
 .box2 {
@@ -230,7 +227,6 @@ html {
     margin-top: 4em;
     border: 3px solid black;
     border-radius: 15px;
-    box-shadow: 0px 3px 16px 10px rgb(140, 0, 255);
 }
 
 .box4 {
@@ -341,14 +337,16 @@ body .slideshow-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to bottom, #1B4BC0, black);
+    margin-left: 47em;
+    margin-right: 47em;
+    margin-bottom: 5em;
 }
 
 .slideshow-container {
     text-align: center;
     overflow: hidden;
     position: relative;
-    box-shadow: 3px 5px 10px rgba(0,0,0,0.3);
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.3);
     margin: auto;
 }
 
@@ -429,6 +427,69 @@ body .slideshow-container {
 .slideshow-nav > a:focus {
     background: #000;
 }
+
+.box5 {
+    padding: 50px;
+    border: 10px solid rgb(0, 0, 0);
+    border-style: double;
+    margin-left: 7em;
+    margin-right: 7em;
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+.info {
+    font-size: 25px;
+    margin-left: 7em;
+    margin-right: 7em;
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+.section1,
+.section2, 
+.section3 {
+    font-size: 25px;
+    margin-left: 7em;
+    margin-right: 7em;
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+.btn1 {
+    background-color: #1B4BC0;
+    padding: 40px;
+    font-size: 40px;
+    text-align: center;
+    border: 3px solid black;
+    border-radius: 15px;
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+.btn2 {
+    background-color: #7D3EA8;
+    padding: 40px;
+    font-size: 40px;
+    text-align: center;
+    border: 3px solid black;
+    border-radius: 15px;
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+.btn3 {
+    background-color: #1B4BC0;
+    padding: 40px;
+    font-size: 40px;
+    text-align: center;
+    border: 3px solid black;
+    border-radius: 15px;
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+
 
 footer {
     background-color: #7D3EA8;
