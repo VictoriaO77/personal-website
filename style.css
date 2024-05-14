@@ -5,6 +5,10 @@
     font-family: "Lato", sans-serif;
 }
 
+p {
+    font-size: 25px;
+}
+
 body {
     background-color: #323232;
     color: white;
@@ -438,6 +442,11 @@ body .slideshow-container {
     margin-bottom: 5em;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
+
 .info {
     font-size: 25px;
     margin-left: 7em;
@@ -450,10 +459,9 @@ body .slideshow-container {
 .section2, 
 .section3 {
     font-size: 25px;
-    margin-left: 7em;
-    margin-right: 7em;
     margin-top: 5em;
     margin-bottom: 5em;
+    text-align: center;
 }
 
 .btn1 {
@@ -461,10 +469,12 @@ body .slideshow-container {
     padding: 40px;
     font-size: 40px;
     text-align: center;
-    border: 3px solid black;
+    border: 3px solid rgb(0, 0, 0);
     border-radius: 15px;
     margin-top: 5em;
     margin-bottom: 5em;
+    margin-left: 10em;
+    margin-right: 10em;
 }
 
 .btn2 {
@@ -476,6 +486,8 @@ body .slideshow-container {
     border-radius: 15px;
     margin-top: 5em;
     margin-bottom: 5em;
+    margin-left: 10em;
+    margin-right: 10em;
 }
 
 .btn3 {
@@ -487,9 +499,50 @@ body .slideshow-container {
     border-radius: 15px;
     margin-top: 5em;
     margin-bottom: 5em;
+    margin-left: 10em;
+    margin-right: 10em;
 }
 
+.hobbies,
+.achievements,
+.future h3 {
+    margin-left: 47%;
+}
 
+.cssZen,
+.jPWeb, 
+.textA,
+.bCalculator {
+    margin-left: 35em;
+    margin-right: 35em;
+}
+
+.cssZen a,
+.jPWeb a, 
+.textA a,
+.bCalculator a {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 15px;
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+.jpEssay,
+.story {
+    margin-left: 35em;
+    margin-right: 35em;
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+.c {
+    text-align: center;
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
 
 footer {
     background-color: #7D3EA8;
